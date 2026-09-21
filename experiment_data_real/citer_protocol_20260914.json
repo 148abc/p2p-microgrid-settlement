@@ -1,0 +1,93 @@
+{
+ "protocol": {
+  "script": "exp_citer_protocol_20260914.py",
+  "date": "2026-09-14T22:58:38",
+  "env": "D:\\anaconda\\envs\\power_market",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "day": 15,
+  "N": 10,
+  "reps": 3,
+  "adaptive": true,
+  "rho_init": 0.01,
+  "max_iter": 1000,
+  "tol": 0.001,
+  "c_solve_definition": "mean of history.solve_time_s over the adaptive run (same definition as analysis_sa_frontier.py:70 and experiment_sa_multiday.py:64)",
+  "purpose": "separate definitional difference from session throughput difference for C_iter (reviewer item U5/R1-M2)"
+ },
+ "runs": [
+  {
+   "rep": 1,
+   "iters": 140,
+   "converged": true,
+   "settled_cost": 2830.6127,
+   "wall_s": 86.29,
+   "c_solve_mean_s": 0.5913,
+   "c_solve_median_s": 0.5912,
+   "c_solve_p10_s": 0.5735,
+   "c_solve_p90_s": 0.6346,
+   "c_solve_sd_s": 0.0491,
+   "solve_time_first_s": 0.3704,
+   "solve_time_last_s": 0.5939,
+   "c_solve_trailing40_mean_s": 0.5971
+  },
+  {
+   "rep": 2,
+   "iters": 140,
+   "converged": true,
+   "settled_cost": 2830.6127,
+   "wall_s": 89.1,
+   "c_solve_mean_s": 0.6101,
+   "c_solve_median_s": 0.6048,
+   "c_solve_p10_s": 0.5832,
+   "c_solve_p90_s": 0.6481,
+   "c_solve_sd_s": 0.0265,
+   "solve_time_first_s": 0.6103,
+   "solve_time_last_s": 0.5995,
+   "c_solve_trailing40_mean_s": 0.6214
+  },
+  {
+   "rep": 3,
+   "iters": 140,
+   "converged": true,
+   "settled_cost": 2830.6127,
+   "wall_s": 87.46,
+   "c_solve_mean_s": 0.5988,
+   "c_solve_median_s": 0.5935,
+   "c_solve_p10_s": 0.5774,
+   "c_solve_p90_s": 0.6244,
+   "c_solve_sd_s": 0.0269,
+   "solve_time_first_s": 0.6287,
+   "solve_time_last_s": 0.5805,
+   "c_solve_trailing40_mean_s": 0.5918
+  }
+ ],
+ "summary": {
+  "c_solve_means_s": [
+   0.5913,
+   0.6101,
+   0.5988
+  ],
+  "c_solve_mean_of_means_s": 0.6001,
+  "c_solve_within_session_spread_s": [
+   0.5913,
+   0.6101
+  ],
+  "c_solve_ratio_max_over_min": 1.032,
+  "archived_frontier_s": 0.3959,
+  "archived_multiday_s": 0.6928,
+  "archived_ratio": 1.75,
+  "tauV_times_citer_frontier_usd": {
+   "0.1": 0.04,
+   "0.3": 0.119,
+   "1.0": 0.396,
+   "3.0": 1.188
+  },
+  "tauV_times_citer_thisrun_usd": {
+   "0.1": 0.06,
+   "0.3": 0.18,
+   "1.0": 0.6,
+   "3.0": 1.8
+  }
+ }
+}

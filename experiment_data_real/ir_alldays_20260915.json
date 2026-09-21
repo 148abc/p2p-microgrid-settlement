@@ -1,0 +1,141 @@
+{
+ "config": {
+  "days": [
+   0,
+   7,
+   15,
+   23,
+   31,
+   39,
+   47,
+   55
+  ],
+  "N": 20,
+  "protocol": "identical to per_mg_benefits.json (day 15); standalone vs coop bill per microgrid"
+ },
+ "days": [
+  {
+   "day": 0,
+   "iters": 41,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 0,
+   "deficit_total": 0.0,
+   "worst_deficit": 43.23,
+   "surplus": 2887.06,
+   "levy_rate_pct": 0.0,
+   "max_beneficiary_cost": 0.0,
+   "deficit_mgs": []
+  },
+  {
+   "day": 7,
+   "iters": 68,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 0,
+   "deficit_total": 0.0,
+   "worst_deficit": 6.8,
+   "surplus": 2814.67,
+   "levy_rate_pct": 0.0,
+   "max_beneficiary_cost": 0.0,
+   "deficit_mgs": []
+  },
+  {
+   "day": 15,
+   "iters": 25,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 1,
+   "deficit_total": 13.02,
+   "worst_deficit": -13.02,
+   "surplus": 1538.91,
+   "levy_rate_pct": 0.846,
+   "max_beneficiary_cost": 4.4,
+   "deficit_mgs": [
+    {
+     "mg_id": 11,
+     "benefit": -13.02
+    }
+   ]
+  },
+  {
+   "day": 23,
+   "iters": 53,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 2,
+   "deficit_total": 20.52,
+   "worst_deficit": -13.75,
+   "surplus": 1260.42,
+   "levy_rate_pct": 1.628,
+   "max_beneficiary_cost": 3.21,
+   "deficit_mgs": [
+    {
+     "mg_id": 17,
+     "benefit": -13.75
+    },
+    {
+     "mg_id": 13,
+     "benefit": -6.77
+    }
+   ]
+  },
+  {
+   "day": 31,
+   "iters": 36,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 0,
+   "deficit_total": 0.0,
+   "worst_deficit": 8.53,
+   "surplus": 1831.85,
+   "levy_rate_pct": 0.0,
+   "max_beneficiary_cost": 0.0,
+   "deficit_mgs": []
+  },
+  {
+   "day": 39,
+   "iters": 31,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 0,
+   "deficit_total": 0.0,
+   "worst_deficit": 15.99,
+   "surplus": 1867.42,
+   "levy_rate_pct": 0.0,
+   "max_beneficiary_cost": 0.0,
+   "deficit_mgs": []
+  },
+  {
+   "day": 47,
+   "iters": 51,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 1,
+   "deficit_total": 1.3,
+   "worst_deficit": -1.3,
+   "surplus": 2529.16,
+   "levy_rate_pct": 0.051,
+   "max_beneficiary_cost": 0.16,
+   "deficit_mgs": [
+    {
+     "mg_id": 12,
+     "benefit": -1.3
+    }
+   ]
+  },
+  {
+   "day": 55,
+   "iters": 46,
+   "stop": "boyd",
+   "converged": true,
+   "n_deficit": 0,
+   "deficit_total": 0.0,
+   "worst_deficit": 2.81,
+   "surplus": 1856.19,
+   "levy_rate_pct": 0.0,
+   "max_beneficiary_cost": 0.0,
+   "deficit_mgs": []
+  }
+ ]
+}

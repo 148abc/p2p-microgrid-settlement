@@ -1,0 +1,96 @@
+{
+  "synthetic_3mg": {
+    "problem": "合成 3 微网 (industrial/commercial/residential)",
+    "N": 3,
+    "centralized": {
+      "cost": 768.0268907628596,
+      "time_s": 0.023740530014038086,
+      "mip_gap": 0.0
+    },
+    "ours_adaptive": {
+      "converged": true,
+      "iterations": 63,
+      "time_s": 4.98521090002032,
+      "cost": 768.8059432045201,
+      "primal_res": 0.10753960591595908,
+      "dual_res": 3.3585419090163914e-15,
+      "rho_final": 0.02,
+      "gap_pct": 0.10143556834145295
+    },
+    "ours_fixed": {
+      "converged": true,
+      "iterations": 286,
+      "time_s": 28.28901250002673,
+      "cost": 768.6199355704678,
+      "primal_res": 0.2711561969055418,
+      "dual_res": 1.4148763418924849e-14,
+      "rho_final": 0.1,
+      "gap_pct": 0.07721667232499183
+    },
+    "ac_admm": {
+      "name": "AC-ADMM (Chen 2024)",
+      "converged": true,
+      "chen_converged": false,
+      "iterations": 60,
+      "time_s": 5.744234299985692,
+      "cost": 768.5876191787253,
+      "primal_res": 0.42442696284818604,
+      "dual_res": 1.2168216554799256e-15,
+      "rho_final": [
+        0.010416666666666666,
+        0.010416666666666666,
+        0.010416666666666666
+      ],
+      "rho_frozen_at": 20,
+      "rho_frozen_value": 0.010416666666666666,
+      "gap_pct": 0.07300895614588974
+    }
+  },
+  "real_N3": {
+    "problem": "真实数据规范排序 N=3 (MG1/MG2/MG19, day=15)",
+    "N": 3,
+    "centralized": {
+      "cost": 2156.920604202845,
+      "time_s": 0.030994176864624023,
+      "mip_gap": 0.0
+    },
+    "ours_adaptive": {
+      "converged": true,
+      "iterations": 83,
+      "time_s": 8.633082500018645,
+      "cost": 2159.86707793027,
+      "primal_res": 3.618714001778642e-14,
+      "dual_res": 1.676941070798811e-15,
+      "rho_final": 0.02,
+      "gap_pct": 0.13660557192897502
+    },
+    "ours_fixed": {
+      "converged": false,
+      "iterations": 300,
+      "time_s": 30.161127800005488,
+      "cost": 2161.168734248919,
+      "primal_res": 2.0097183471152322e-14,
+      "dual_res": 0.028000000000005798,
+      "rho_final": 0.1,
+      "gap_pct": 0.19695347328948454
+    },
+    "ac_admm": {
+      "name": "AC-ADMM (Chen 2024)",
+      "converged": true,
+      "chen_converged": false,
+      "iterations": 193,
+      "time_s": 19.86197969998466,
+      "cost": 1529.7156493717805,
+      "primal_res": 0.2800013292393331,
+      "dual_res": 0.0005422767397440966,
+      "rho_final": [
+        0.05000000000000001,
+        0.05000000000000001,
+        0.05000000000000001
+      ],
+      "rho_frozen_at": 20,
+      "rho_frozen_value": 0.05000000000000001,
+      "gap_pct": -29.078722397520373
+    }
+  }
+}

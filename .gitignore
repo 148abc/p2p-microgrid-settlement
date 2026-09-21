@@ -1,0 +1,6 @@
+.mimosa/
+.claude/
+.agents/
+.obsidian/
+__pycache__/
+*.pyc

@@ -1,0 +1,138 @@
+{
+ "protocol": {
+  "script": "exp_acadmm_netparam_20260914.py",
+  "date": "2026-09-14T23:03:52",
+  "env": "D:\\anaconda\\envs\\power_market",
+  "python": "3.11.14",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "day": 15,
+  "sizes": [
+   3,
+   5,
+   10
+  ],
+  "max_iter": 500,
+  "tol": 0.001,
+  "rho_init": 0.1,
+  "adaptive": true,
+  "networks": {
+   "load_rule": "microgrid.build_network(mgs)  [headline drivers]",
+   "template": "microgrid.DistributionNetwork(n)  [chen_multiday_ext.py:39]"
+  },
+  "purpose": "check whether the A-ADMM comparison network parameterization changes the published day-15 numbers (reviewer item U11/R1-m6)"
+ },
+ "archive_reference": {
+  "3": {
+   "iters": 83,
+   "gap": 0.14,
+   "cent": 2156.92
+  },
+  "5": {
+   "iters": 362,
+   "gap": 0.3,
+   "cent": 2739.24
+  },
+  "10": {
+   "iters": 226,
+   "gap": 0.8,
+   "cent": 2809.16
+  }
+ },
+ "rows": [
+  {
+   "day": 15,
+   "N": 3,
+   "network": "load_rule",
+   "centralized": 2156.92,
+   "wall_s": 7.1,
+   "iters": 83,
+   "converged": true,
+   "settled_cost": 2159.91,
+   "gap_pct": 0.139
+  },
+  {
+   "day": 15,
+   "N": 3,
+   "network": "template",
+   "centralized": 2156.92,
+   "wall_s": 8.2,
+   "iters": 83,
+   "converged": true,
+   "settled_cost": 2159.96,
+   "gap_pct": 0.141
+  },
+  {
+   "day": 15,
+   "N": 5,
+   "network": "load_rule",
+   "centralized": 2739.24,
+   "wall_s": 72.6,
+   "iters": 362,
+   "converged": true,
+   "settled_cost": 2747.39,
+   "gap_pct": 0.298
+  },
+  {
+   "day": 15,
+   "N": 5,
+   "network": "template",
+   "centralized": 2739.24,
+   "wall_s": 72.5,
+   "iters": 362,
+   "converged": true,
+   "settled_cost": 2747.39,
+   "gap_pct": 0.298
+  },
+  {
+   "day": 15,
+   "N": 10,
+   "network": "load_rule",
+   "centralized": 2809.16,
+   "wall_s": 143.2,
+   "iters": 226,
+   "converged": true,
+   "settled_cost": 2831.5,
+   "gap_pct": 0.795
+  },
+  {
+   "day": 15,
+   "N": 10,
+   "network": "template",
+   "centralized": 2809.16,
+   "wall_s": 142.8,
+   "iters": 226,
+   "converged": true,
+   "settled_cost": 2831.5,
+   "gap_pct": 0.795
+  }
+ ],
+ "summary": {
+  "3": {
+   "cent_diff_usd": 0.0,
+   "iters_diff": 0,
+   "settled_diff_usd": -0.05,
+   "gap_diff_pp": -0.002,
+   "archive_iters": 83,
+   "load_rule_matches_archive_iters": true,
+   "template_matches_archive_iters": true
+  },
+  "5": {
+   "cent_diff_usd": 0.0,
+   "iters_diff": 0,
+   "settled_diff_usd": 0.0,
+   "gap_diff_pp": 0.0,
+   "archive_iters": 362,
+   "load_rule_matches_archive_iters": true,
+   "template_matches_archive_iters": true
+  },
+  "10": {
+   "cent_diff_usd": 0.0,
+   "iters_diff": 0,
+   "settled_diff_usd": 0.0,
+   "gap_diff_pp": 0.0,
+   "archive_iters": 226,
+   "load_rule_matches_archive_iters": true,
+   "template_matches_archive_iters": true
+  }
+ }
+}

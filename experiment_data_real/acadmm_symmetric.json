@@ -1,0 +1,140 @@
+{
+ "config": {
+  "day": 15,
+  "sizes": [
+   3,
+   5,
+   10
+  ],
+  "max_iter": 300,
+  "protocol": "run to min(native stop, 300); identical terminal repair round; full-cost repricing for every method"
+ },
+ "rows": [
+  {
+   "method": "ours_adaptive",
+   "iters": 83,
+   "boyd": true,
+   "chen_native": false,
+   "raw_cost": 2159.9114417742426,
+   "repair_ok": true,
+   "repair_delta": -0.15992683744661917,
+   "settled_cost": 2159.751514936796,
+   "repair_time_s": 0.028370400075800717,
+   "N": 3,
+   "centralized": 2156.9206041950097,
+   "gap_pct": 0.13124779541168208
+  },
+  {
+   "method": "ours_fixed",
+   "iters": 300,
+   "boyd": false,
+   "chen_native": false,
+   "raw_cost": 2161.272860179093,
+   "repair_ok": true,
+   "repair_delta": -3.869135753120645e-05,
+   "settled_cost": 2161.2728214877357,
+   "repair_time_s": 0.04125890007708222,
+   "N": 3,
+   "centralized": 2156.9206041950097,
+   "gap_pct": 0.2017792070909483
+  },
+  {
+   "method": "ac_admm",
+   "iters": 193,
+   "boyd": true,
+   "chen_native": false,
+   "raw_cost": 1529.7125317326525,
+   "repair_ok": true,
+   "repair_delta": 629.9148792710168,
+   "settled_cost": 2159.6274110036693,
+   "repair_time_s": 0.039230700000189245,
+   "N": 3,
+   "centralized": 2156.9206041950097,
+   "gap_pct": 0.12549404013273063
+  },
+  {
+   "method": "ours_adaptive",
+   "iters": 300,
+   "boyd": false,
+   "chen_native": false,
+   "raw_cost": 2747.6613469440686,
+   "repair_ok": true,
+   "repair_delta": 0.006059918754090177,
+   "settled_cost": 2747.6674068628226,
+   "repair_time_s": 0.07238339993637055,
+   "N": 5,
+   "centralized": 2739.2443371211084,
+   "gap_pct": 0.30749610860076554
+  },
+  {
+   "method": "ours_fixed",
+   "iters": 300,
+   "boyd": false,
+   "chen_native": false,
+   "raw_cost": 2755.8350149521566,
+   "repair_ok": true,
+   "repair_delta": 0.3829679302880322,
+   "settled_cost": 2756.2179828824446,
+   "repair_time_s": 0.10562039993237704,
+   "N": 5,
+   "centralized": 2739.2443371211084,
+   "gap_pct": 0.619647014737473
+  },
+  {
+   "method": "ac_admm",
+   "iters": 300,
+   "boyd": false,
+   "chen_native": false,
+   "raw_cost": 1846.3879148838976,
+   "repair_ok": true,
+   "repair_delta": 903.2239105840574,
+   "settled_cost": 2749.611825467955,
+   "repair_time_s": 0.0736124999821186,
+   "N": 5,
+   "centralized": 2739.2443371211084,
+   "gap_pct": 0.3784798678362008
+  },
+  {
+   "method": "ours_adaptive",
+   "iters": 226,
+   "boyd": true,
+   "chen_native": false,
+   "raw_cost": 2831.4975134230394,
+   "repair_ok": true,
+   "repair_delta": 0.4951566005051973,
+   "settled_cost": 2831.9926700235446,
+   "repair_time_s": 0.1487462999066338,
+   "N": 10,
+   "centralized": 2809.1618799217267,
+   "gap_pct": 0.8127260399266866
+  },
+  {
+   "method": "ours_fixed",
+   "iters": 300,
+   "boyd": false,
+   "chen_native": false,
+   "raw_cost": 2837.006489857916,
+   "repair_ok": true,
+   "repair_delta": 0.0012064557949997834,
+   "settled_cost": 2837.007696313711,
+   "repair_time_s": 0.26710920000914484,
+   "N": 10,
+   "centralized": 2809.1618799217267,
+   "gap_pct": 0.9912499735600991
+  },
+  {
+   "method": "ac_admm",
+   "iters": 242,
+   "boyd": true,
+   "chen_native": false,
+   "raw_cost": 1824.4901023248149,
+   "repair_ok": true,
+   "repair_delta": 1007.7293030937344,
+   "settled_cost": 2832.2194054185493,
+   "repair_time_s": 0.2521317999344319,
+   "N": 10,
+   "centralized": 2809.1618799217267,
+   "gap_pct": 0.8207973225617397
+  }
+ ]
+}

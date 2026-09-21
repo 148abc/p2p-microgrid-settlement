@@ -1,0 +1,31 @@
+{
+ "day": 15,
+ "max_iter": 300,
+ "note": "full-cost repricing of AC-ADMM cleared state",
+ "rows": [
+  {
+   "N": 3,
+   "iterations": 193,
+   "stop_reason": "boyd",
+   "grid_only_cost": 1529.7156493717805,
+   "full_cost_settled": 2159.630528642797,
+   "repair_time_s": 0.1065146999899298
+  },
+  {
+   "N": 5,
+   "iterations": 300,
+   "stop_reason": "max_iter",
+   "grid_only_cost": 1846.2638545543462,
+   "full_cost_settled": 2749.487737221124,
+   "repair_time_s": 0.1784038000041619
+  },
+  {
+   "N": 10,
+   "iterations": 242,
+   "stop_reason": "boyd",
+   "grid_only_cost": 1824.531081290888,
+   "full_cost_settled": 2832.258241543316,
+   "repair_time_s": 0.5899587000021711
+  }
+ ]
+}

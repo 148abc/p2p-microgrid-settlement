@@ -1,0 +1,56 @@
+{
+ "config": {
+  "day": 15,
+  "N": 10,
+  "protocol": "fixed rho=0.01 + economic stop",
+  "rho_init": 0.01,
+  "adaptive": false,
+  "c_iter_paper": 0.3959,
+  "window": 5,
+  "k_min": 15,
+  "gamma_bar": 0.9,
+  "max_iter": 1000,
+  "tols": null
+ },
+ "rows": [
+  {
+   "tau": 0.3,
+   "iters": 46,
+   "stop": "boyd",
+   "converged": true,
+   "gamma_hat": null,
+   "cost_at_stop": 2830.35,
+   "settled_cost": 2832.02,
+   "repair_delta": 1.67,
+   "pre_repair_imbalance_kw": 0.4936,
+   "wall_s": 27.7,
+   "c_solve_measured": 0.5687
+  },
+  {
+   "tau": 1.0,
+   "iters": 46,
+   "stop": "boyd",
+   "converged": true,
+   "gamma_hat": null,
+   "cost_at_stop": 2830.35,
+   "settled_cost": 2832.02,
+   "repair_delta": 1.67,
+   "pre_repair_imbalance_kw": 0.4936,
+   "wall_s": 28.7,
+   "c_solve_measured": 0.5883
+  },
+  {
+   "tau": 3.0,
+   "iters": 46,
+   "stop": "boyd",
+   "converged": true,
+   "gamma_hat": null,
+   "cost_at_stop": 2830.35,
+   "settled_cost": 2832.02,
+   "repair_delta": 1.67,
+   "pre_repair_imbalance_kw": 0.4936,
+   "wall_s": 28.5,
+   "c_solve_measured": 0.5859
+  }
+ ]
+}

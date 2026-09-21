@@ -1,0 +1,92 @@
+{
+ "day": 15,
+ "N": 10,
+ "mg_results": [
+  {
+   "mg": 1,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.72,
+   "cost_claim": 667939101530000
+  },
+  {
+   "mg": 2,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.56,
+   "cost_claim": 289905355875000
+  },
+  {
+   "mg": 3,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.24,
+   "cost_claim": 248917456442000
+  },
+  {
+   "mg": 4,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.46,
+   "cost_claim": 430285039179000
+  },
+  {
+   "mg": 5,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.21,
+   "cost_claim": 159050729667000
+  },
+  {
+   "mg": 6,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.53,
+   "cost_claim": 59178146811000
+  },
+  {
+   "mg": 7,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 6.02,
+   "cost_claim": 359800574982000
+  },
+  {
+   "mg": 8,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.44,
+   "cost_claim": 251090575885000
+  },
+  {
+   "mg": 9,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.36,
+   "cost_claim": 208650412455000
+  },
+  {
+   "mg": 10,
+   "proved": true,
+   "constraints": 22361,
+   "wall_s": 5.53,
+   "cost_claim": 157194634355000
+  }
+ ],
+ "tamper": {
+  "kind": "cost_claim+1$",
+  "rejected": true
+ },
+ "admm": {
+  "stop_reason": "boyd",
+  "iterations": 140,
+  "settled_cost": 2832.0118869848434,
+  "wall_s": 105.8
+ },
+ "timings": {
+  "admm_s": 105.8,
+  "witness_build_s": 0.0,
+  "prove_verify_s": 55.1,
+  "total_s": 166.1
+ }
+}

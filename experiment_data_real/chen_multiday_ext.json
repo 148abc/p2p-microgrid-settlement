@@ -1,0 +1,717 @@
+{
+ "days": [
+  0,
+  7,
+  15,
+  23,
+  31,
+  39,
+  47,
+  55
+ ],
+ "sizes": [
+  3,
+  5,
+  10
+ ],
+ "max_iter": 500,
+ "protocol": "identical repair + full-cost repricing; AC rho0=0.1, ours rho0=0.1",
+ "runs": [
+  {
+   "day": 0,
+   "N": 3,
+   "centralized": 47.80046119837816,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 258,
+     "time_s": 28.372376100043766,
+     "settled_cost": 43.80509014302075,
+     "gap_pct": -8.358436205826756
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 49.22557880007662,
+     "settled_cost": 48.67824214022389,
+     "gap_pct": 1.8363440850556285
+    },
+    "ac_admm": {
+     "converged": false,
+     "stop_reason": "max_iter",
+     "iterations": 500,
+     "time_s": 53.558282700018026,
+     "settled_cost": 44.829203627328496,
+     "gap_pct": -6.2159600484157576
+    }
+   }
+  },
+  {
+   "day": 0,
+   "N": 5,
+   "centralized": 603.4916718846501,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 302,
+     "time_s": 61.57516719994601,
+     "settled_cost": 605.9442423952968,
+     "gap_pct": 0.40639674496045336
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 96.46688159997575,
+     "settled_cost": 606.633121707505,
+     "gap_pct": 0.5205456792873998
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 288,
+     "time_s": 55.71390899992548,
+     "settled_cost": 605.8391744039199,
+     "gap_pct": 0.38898672983152716
+    }
+   }
+  },
+  {
+   "day": 0,
+   "N": 10,
+   "centralized": 1146.9256442579128,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 250,
+     "time_s": 150.09382870001718,
+     "settled_cost": 1155.8636550205358,
+     "gap_pct": 0.7793016755158594
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 293,
+     "time_s": 178.59834949998185,
+     "settled_cost": 1156.4927923205066,
+     "gap_pct": 0.8341559115442005
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 293,
+     "time_s": 180.6273129999172,
+     "settled_cost": 1157.2730972906395,
+     "gap_pct": 0.9021903978284226
+    }
+   }
+  },
+  {
+   "day": 7,
+   "N": 3,
+   "centralized": 2192.3900076259965,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 161,
+     "time_s": 16.197517900029197,
+     "settled_cost": 2195.926189505254,
+     "gap_pct": 0.16129346817661772
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 47.64069270004984,
+     "settled_cost": 2199.474746599394,
+     "gap_pct": 0.32315139864504583
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 175,
+     "time_s": 16.685654400032945,
+     "settled_cost": 2195.7109611888304,
+     "gap_pct": 0.15147640480399505
+    }
+   }
+  },
+  {
+   "day": 7,
+   "N": 5,
+   "centralized": 2029.0989826502457,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 391,
+     "time_s": 78.94477930001449,
+     "settled_cost": 2034.7381332007228,
+     "gap_pct": 0.2779140199021584
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 97.70598810003139,
+     "settled_cost": 2053.613729815907,
+     "gap_pct": 1.2081592556732759
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 113,
+     "time_s": 23.355333099956624,
+     "settled_cost": 2034.6374550428657,
+     "gap_pct": 0.27295230247398006
+    }
+   }
+  },
+  {
+   "day": 7,
+   "N": 10,
+   "centralized": 1749.6937940099858,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 232,
+     "time_s": 140.6115801000269,
+     "settled_cost": 1763.3818586427517,
+     "gap_pct": 0.7823120067995024
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 427,
+     "time_s": 258.10312999994494,
+     "settled_cost": 1762.0925612377205,
+     "gap_pct": 0.7086249759918786
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 397,
+     "time_s": 250.34223680000287,
+     "settled_cost": 1762.6910896438535,
+     "gap_pct": 0.7428325846707268
+    }
+   }
+  },
+  {
+   "day": 15,
+   "N": 3,
+   "centralized": 2156.920604202845,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 83,
+     "time_s": 8.177723599947058,
+     "settled_cost": 2159.9617462294154,
+     "gap_pct": 0.14099462078690722
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 488,
+     "time_s": 46.7225661999546,
+     "settled_cost": 2159.649981361446,
+     "gap_pct": 0.12654045555885013
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 193,
+     "time_s": 18.416805500048213,
+     "settled_cost": 2159.6297346398496,
+     "gap_pct": 0.12560176910201573
+    }
+   }
+  },
+  {
+   "day": 15,
+   "N": 5,
+   "centralized": 2739.2443372438383,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 362,
+     "time_s": 72.91387689998373,
+     "settled_cost": 2747.387198236359,
+     "gap_pct": 0.29726669073682316
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 96.02355939999688,
+     "settled_cost": 2750.8204654570955,
+     "gap_pct": 0.42260298053238754
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 425,
+     "time_s": 84.42471920000389,
+     "settled_cost": 2746.7815988146285,
+     "gap_pct": 0.2751584248367559
+    }
+   }
+  },
+  {
+   "day": 15,
+   "N": 10,
+   "centralized": 2809.1618800092197,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 226,
+     "time_s": 135.664368800004,
+     "settled_cost": 2831.4975134230394,
+     "gap_pct": 0.7950995481166957
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 417,
+     "time_s": 257.6861753000412,
+     "settled_cost": 2831.535491574074,
+     "gap_pct": 0.7964514869745054
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 242,
+     "time_s": 154.82362790009938,
+     "settled_cost": 2832.2194054185493,
+     "gap_pct": 0.8207973194216188
+    }
+   }
+  },
+  {
+   "day": 23,
+   "N": 3,
+   "centralized": 2951.8818252664414,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 25,
+     "time_s": 2.67785089998506,
+     "settled_cost": 2958.328019611674,
+     "gap_pct": 0.21837575915325225
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 36,
+     "time_s": 3.474016400054097,
+     "settled_cost": 2958.275992197011,
+     "gap_pct": 0.21661324229984738
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd+chen",
+     "iterations": 10,
+     "time_s": 0.981946999905631,
+     "settled_cost": 2958.2785602461163,
+     "gap_pct": 0.21670023931589794
+    }
+   }
+  },
+  {
+   "day": 23,
+   "N": 5,
+   "centralized": 3450.773247072974,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 108,
+     "time_s": 21.3297290999908,
+     "settled_cost": 3462.3918921144805,
+     "gap_pct": 0.33669685631653223
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 98.14157460001297,
+     "settled_cost": 3463.537352050636,
+     "gap_pct": 0.3698911537722425
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 178,
+     "time_s": 38.4073135999497,
+     "settled_cost": 3462.3102455863122,
+     "gap_pct": 0.33433082058128144
+    }
+   }
+  },
+  {
+   "day": 23,
+   "N": 10,
+   "centralized": 4042.7857409569397,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 228,
+     "time_s": 145.51011140004266,
+     "settled_cost": 4075.132439056614,
+     "gap_pct": 0.8001091369244312
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 291,
+     "time_s": 179.06029990001116,
+     "settled_cost": 4075.1022565838443,
+     "gap_pct": 0.7993625608082623
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 258,
+     "time_s": 164.55450650001876,
+     "settled_cost": 4074.7610307353098,
+     "gap_pct": 0.7909221964061209
+    }
+   }
+  },
+  {
+   "day": 31,
+   "N": 3,
+   "centralized": 1525.9153096051832,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 339,
+     "time_s": 33.21383939997759,
+     "settled_cost": 1528.964834366561,
+     "gap_pct": 0.1998488869062374
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 49.76811219996307,
+     "settled_cost": 1539.0561382673964,
+     "gap_pct": 0.8611768018510295
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 245,
+     "time_s": 23.82942500000354,
+     "settled_cost": 1528.2816678875326,
+     "gap_pct": 0.15507795665027516
+    }
+   }
+  },
+  {
+   "day": 31,
+   "N": 5,
+   "centralized": 1591.7549126055253,
+   "methods": {
+    "ours_adaptive": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 98.39317409996875,
+     "settled_cost": 1597.6435237288963,
+     "gap_pct": 0.3699445861129458
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 98.28811630001292,
+     "settled_cost": 1602.580318075645,
+     "gap_pct": 0.6800924805942452
+    },
+    "ac_admm": {
+     "converged": false,
+     "stop_reason": "max_iter",
+     "iterations": 500,
+     "time_s": 102.08672749996185,
+     "settled_cost": 1599.8194292181931,
+     "gap_pct": 0.5066431112480198
+    }
+   }
+  },
+  {
+   "day": 31,
+   "N": 10,
+   "centralized": 1772.8835173170473,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 268,
+     "time_s": 165.2776025000494,
+     "settled_cost": 1782.5092367738064,
+     "gap_pct": 0.5429414489298149
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 378,
+     "time_s": 230.25747109996155,
+     "settled_cost": 1783.852505438503,
+     "gap_pct": 0.6187089007435335
+    },
+    "ac_admm": {
+     "converged": false,
+     "stop_reason": "max_iter",
+     "iterations": 500,
+     "time_s": 311.93736969993915,
+     "settled_cost": 1784.7490600569283,
+     "gap_pct": 0.6692793194804721
+    }
+   }
+  },
+  {
+   "day": 39,
+   "N": 3,
+   "centralized": 2169.9841033265348,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 104,
+     "time_s": 9.994532000040635,
+     "settled_cost": 2173.7924271702364,
+     "gap_pct": 0.17550008029383854
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 325,
+     "time_s": 31.38212259998545,
+     "settled_cost": 2174.1585119976708,
+     "gap_pct": 0.1923704724258918
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 41,
+     "time_s": 3.921467899926938,
+     "settled_cost": 2174.0624384676257,
+     "gap_pct": 0.18794308837742094
+    }
+   }
+  },
+  {
+   "day": 39,
+   "N": 5,
+   "centralized": 1974.424091420502,
+   "methods": {
+    "ours_adaptive": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 98.5460815000115,
+     "settled_cost": 1984.8578941017622,
+     "gap_pct": 0.5284479016741328
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 100.11752700002398,
+     "settled_cost": 1989.4043025470564,
+     "gap_pct": 0.7587129427587611
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 449,
+     "time_s": 90.18881240009796,
+     "settled_cost": 1984.7462442627614,
+     "gap_pct": 0.5227930963318559
+    }
+   }
+  },
+  {
+   "day": 39,
+   "N": 10,
+   "centralized": 3453.4961543931845,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 243,
+     "time_s": 145.47411680000369,
+     "settled_cost": 3489.5318967777603,
+     "gap_pct": 1.0434568557064927
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 408,
+     "time_s": 250.12476599996444,
+     "settled_cost": 3487.26410199798,
+     "gap_pct": 0.9777902188146201
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 261,
+     "time_s": 161.60383680008817,
+     "settled_cost": 3488.544606538121,
+     "gap_pct": 1.014868717903495
+    }
+   }
+  },
+  {
+   "day": 47,
+   "N": 3,
+   "centralized": 2176.3498177150395,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 111,
+     "time_s": 11.299778099986725,
+     "settled_cost": 2181.028255532381,
+     "gap_pct": 0.21496717941481766
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 49.59428020007908,
+     "settled_cost": 2181.198061673746,
+     "gap_pct": 0.22276951615235538
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 76,
+     "time_s": 7.294746899977326,
+     "settled_cost": 2180.9843857143005,
+     "gap_pct": 0.21295142727224045
+    }
+   }
+  },
+  {
+   "day": 47,
+   "N": 5,
+   "centralized": 1346.4300428169124,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 250,
+     "time_s": 49.07492490008008,
+     "settled_cost": 1366.0182855827397,
+     "gap_pct": 1.4548281115924957
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 102.31502660003025,
+     "settled_cost": 1412.5218359793826,
+     "gap_pct": 4.908668928999626
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 308,
+     "time_s": 61.05835379997734,
+     "settled_cost": 1366.0509740935966,
+     "gap_pct": 1.4572559028491752
+    }
+   }
+  },
+  {
+   "day": 47,
+   "N": 10,
+   "centralized": 1255.7847646824714,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 287,
+     "time_s": 172.96995870000683,
+     "settled_cost": 1273.7096237287403,
+     "gap_pct": 1.4273830635938054
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 302.492721100105,
+     "settled_cost": 1275.063876990507,
+     "gap_pct": 1.535224255799149
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 372,
+     "time_s": 233.94042629993055,
+     "settled_cost": 1273.314736570976,
+     "gap_pct": 1.3959376145909155
+    }
+   }
+  },
+  {
+   "day": 55,
+   "N": 3,
+   "centralized": 1829.805767028021,
+   "methods": {
+    "ours_adaptive": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 48.92843199998606,
+     "settled_cost": 1833.152372188328,
+     "gap_pct": 0.1828940109715911
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 52.81330619996879,
+     "settled_cost": 1834.7496124832157,
+     "gap_pct": 0.27018416622572183
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 127,
+     "time_s": 16.648923799977638,
+     "settled_cost": 1832.9263474281931,
+     "gap_pct": 0.17054162012182808
+    }
+   }
+  },
+  {
+   "day": 55,
+   "N": 5,
+   "centralized": 744.3307782133866,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 297,
+     "time_s": 67.59600060002413,
+     "settled_cost": 750.9692076158839,
+     "gap_pct": 0.8918654980829219
+    },
+    "ours_fixed": {
+     "converged": false,
+     "iterations": 500,
+     "time_s": 100.74067479989026,
+     "settled_cost": 767.4152848104509,
+     "gap_pct": 3.1013774081026106
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 288,
+     "time_s": 58.23410320002586,
+     "settled_cost": 751.6140012864546,
+     "gap_pct": 0.9784928000088768
+    }
+   }
+  },
+  {
+   "day": 55,
+   "N": 10,
+   "centralized": 2063.2400270002245,
+   "methods": {
+    "ours_adaptive": {
+     "converged": true,
+     "iterations": 249,
+     "time_s": 151.9833321000915,
+     "settled_cost": 2084.813969265487,
+     "gap_pct": 1.0456341474059603
+    },
+    "ours_fixed": {
+     "converged": true,
+     "iterations": 305,
+     "time_s": 185.48486620001495,
+     "settled_cost": 2084.7829495098113,
+     "gap_pct": 1.044130698690853
+    },
+    "ac_admm": {
+     "converged": true,
+     "stop_reason": "boyd",
+     "iterations": 162,
+     "time_s": 101.18279280001298,
+     "settled_cost": 2084.202293530602,
+     "gap_pct": 1.0159877792238792
+    }
+   }
+  }
+ ]
+}

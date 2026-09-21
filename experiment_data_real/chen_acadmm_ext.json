@@ -1,0 +1,152 @@
+{
+  "natural_N3": {
+    "problem": "真实数据自然顺序 N=3 (MG1..MG3, day=15)",
+    "N": 3,
+    "centralized": {
+      "cost": 2156.920604202845,
+      "time_s": 0.03684401512145996,
+      "mip_gap": 0.0
+    },
+    "ours_adaptive": {
+      "converged": true,
+      "iterations": 83,
+      "time_s": 3.4782785999123007,
+      "cost": 2159.86707793027,
+      "primal_res": 3.618714001778642e-14,
+      "dual_res": 1.676941070798811e-15,
+      "rho_final": 0.02,
+      "gap_pct": 0.13660557192897502
+    },
+    "ours_fixed": {
+      "converged": false,
+      "iterations": 300,
+      "time_s": 13.590845900005661,
+      "cost": 2161.168734248919,
+      "primal_res": 2.0097183471152322e-14,
+      "dual_res": 0.028000000000005798,
+      "rho_final": 0.1,
+      "gap_pct": 0.19695347328948454
+    },
+    "ac_admm": {
+      "name": "AC-ADMM (Chen 2024)",
+      "converged": true,
+      "chen_converged": false,
+      "iterations": 193,
+      "time_s": 10.097251300001517,
+      "cost": 1529.7156493717805,
+      "primal_res": 0.2800013292393331,
+      "dual_res": 0.0005422767397440966,
+      "rho_final": [
+        0.05000000000000001,
+        0.05000000000000001,
+        0.05000000000000001
+      ],
+      "rho_frozen_at": 20,
+      "rho_frozen_value": 0.05000000000000001,
+      "gap_pct": -29.078722397520373
+    }
+  },
+  "natural_N5": {
+    "problem": "真实数据自然顺序 N=5 (MG1..MG5, day=15)",
+    "N": 5,
+    "centralized": {
+      "cost": 2739.2443372438383,
+      "time_s": 0.04392242431640625,
+      "mip_gap": 0.0
+    },
+    "ours_adaptive": {
+      "converged": false,
+      "iterations": 300,
+      "time_s": 31.986316499998793,
+      "cost": 2747.534753523016,
+      "primal_res": 0.006928226710626291,
+      "dual_res": 0.03589681076922275,
+      "rho_final": 0.05,
+      "gap_pct": 0.30265340577538546
+    },
+    "ours_fixed": {
+      "converged": false,
+      "iterations": 300,
+      "time_s": 31.02509030001238,
+      "cost": 2755.67253384002,
+      "primal_res": 0.7843539378447452,
+      "dual_res": 0.06524416805485338,
+      "rho_final": 0.1,
+      "gap_pct": 0.5997346192458122
+    },
+    "ac_admm": {
+      "name": "AC-ADMM (Chen 2024)",
+      "converged": false,
+      "chen_converged": false,
+      "iterations": 300,
+      "time_s": 32.398763899924234,
+      "cost": 1846.2638545543462,
+      "primal_res": 0.0010164356240751618,
+      "dual_res": 0.03577709602123398,
+      "rho_final": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "rho_frozen_at": 20,
+      "rho_frozen_value": 0.05,
+      "gap_pct": -32.599519164763066
+    }
+  },
+  "natural_N10": {
+    "problem": "真实数据自然顺序 N=10 (MG1..MG10, day=15)",
+    "N": 10,
+    "centralized": {
+      "cost": 2809.1618800092197,
+      "time_s": 0.14297890663146973,
+      "mip_gap": 0.0
+    },
+    "ours_adaptive": {
+      "converged": true,
+      "iterations": 226,
+      "time_s": 73.80820829991717,
+      "cost": 2831.452584664254,
+      "primal_res": 0.47436901043375435,
+      "dual_res": 0.03959008430232039,
+      "rho_final": 0.05,
+      "gap_pct": 0.7935001828716721
+    },
+    "ours_fixed": {
+      "converged": false,
+      "iterations": 300,
+      "time_s": 100.61294020002242,
+      "cost": 2836.915093651429,
+      "primal_res": 8.354966496364389e-05,
+      "dual_res": 0.07583211113730307,
+      "rho_final": 0.1,
+      "gap_pct": 0.9879535187953672
+    },
+    "ac_admm": {
+      "name": "AC-ADMM (Chen 2024)",
+      "converged": true,
+      "chen_converged": false,
+      "iterations": 242,
+      "time_s": 83.7055846999865,
+      "cost": 1824.531081290888,
+      "primal_res": 0.251683153482604,
+      "dual_res": 0.047141772313044464,
+      "rho_final": [
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001,
+        0.05750000000000001
+      ],
+      "rho_frozen_at": 20,
+      "rho_frozen_value": 0.05750000000000001,
+      "gap_pct": -35.05069628508201
+    }
+  }
+}

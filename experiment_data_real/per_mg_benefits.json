@@ -1,0 +1,146 @@
+{
+  "day": 15,
+  "rows": [
+    {
+      "mg_id": 1,
+      "mg_type": "commercial",
+      "standalone": 1146.281233043188,
+      "coop_bill": 1012.5110652473353,
+      "benefit": 133.77016779585267
+    },
+    {
+      "mg_id": 2,
+      "mg_type": "industrial",
+      "standalone": 704.1141921215965,
+      "coop_bill": 570.3654012995136,
+      "benefit": 133.74879082208292
+    },
+    {
+      "mg_id": 3,
+      "mg_type": "industrial",
+      "standalone": 399.4156301525832,
+      "coop_bill": 342.45262458920666,
+      "benefit": 56.963005563376555
+    },
+    {
+      "mg_id": 4,
+      "mg_type": "commercial",
+      "standalone": 641.7709368999399,
+      "coop_bill": 603.4357838866621,
+      "benefit": 38.33515301327782
+    },
+    {
+      "mg_id": 5,
+      "mg_type": "residential",
+      "standalone": 102.5031655227675,
+      "coop_bill": 40.19826886446148,
+      "benefit": 62.30489665830602
+    },
+    {
+      "mg_id": 6,
+      "mg_type": "commercial",
+      "standalone": -273.7930212615105,
+      "coop_bill": -793.2764488325907,
+      "benefit": 519.4834275710803
+    },
+    {
+      "mg_id": 7,
+      "mg_type": "commercial",
+      "standalone": 471.1695897451683,
+      "coop_bill": 464.4361355932762,
+      "benefit": 6.73345415189209
+    },
+    {
+      "mg_id": 8,
+      "mg_type": "commercial",
+      "standalone": 394.6706214520277,
+      "coop_bill": 376.4144603453376,
+      "benefit": 18.256161106690115
+    },
+    {
+      "mg_id": 9,
+      "mg_type": "industrial",
+      "standalone": 375.19102764291085,
+      "coop_bill": 333.70092273057963,
+      "benefit": 41.49010491233122
+    },
+    {
+      "mg_id": 10,
+      "mg_type": "residential",
+      "standalone": 137.08865725206903,
+      "coop_bill": 79.59971515254206,
+      "benefit": 57.488942099526966
+    },
+    {
+      "mg_id": 11,
+      "mg_type": "commercial",
+      "standalone": 70.93447940353825,
+      "coop_bill": 83.95730421502864,
+      "benefit": -13.022824811490395
+    },
+    {
+      "mg_id": 12,
+      "mg_type": "commercial",
+      "standalone": 249.4424565094236,
+      "coop_bill": 238.7859927126859,
+      "benefit": 10.656463796737711
+    },
+    {
+      "mg_id": 13,
+      "mg_type": "commercial",
+      "standalone": 363.73385584378457,
+      "coop_bill": 345.4677844566212,
+      "benefit": 18.26607138716338
+    },
+    {
+      "mg_id": 14,
+      "mg_type": "industrial",
+      "standalone": 535.8596229084729,
+      "coop_bill": 483.58435710035377,
+      "benefit": 52.27526580811917
+    },
+    {
+      "mg_id": 15,
+      "mg_type": "commercial",
+      "standalone": 624.0340387656563,
+      "coop_bill": 568.6191469511487,
+      "benefit": 55.414891814507655
+    },
+    {
+      "mg_id": 16,
+      "mg_type": "residential",
+      "standalone": 373.14538653958186,
+      "coop_bill": 327.72486620348184,
+      "benefit": 45.420520336100026
+    },
+    {
+      "mg_id": 17,
+      "mg_type": "residential",
+      "standalone": 191.3028995689896,
+      "coop_bill": 181.1066277998043,
+      "benefit": 10.196271769185302
+    },
+    {
+      "mg_id": 18,
+      "mg_type": "industrial",
+      "standalone": 1025.1519703167596,
+      "coop_bill": 929.0426580353214,
+      "benefit": 96.10931228143818
+    },
+    {
+      "mg_id": 19,
+      "mg_type": "residential",
+      "standalone": -34.53878958376224,
+      "coop_bill": -180.79055279742755,
+      "benefit": 146.2517632136653
+    },
+    {
+      "mg_id": 20,
+      "mg_type": "residential",
+      "standalone": 232.8898381833197,
+      "coop_bill": 197.14737850198208,
+      "benefit": 35.742459681337635
+    }
+  ],
+  "total_benefit": 1525.8842989711802
+}

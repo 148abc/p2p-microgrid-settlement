@@ -1,0 +1,33 @@
+{
+  "_description": "Edge-device attestation benchmark for the per-microgrid circuit (CircuitMGv2, T=24, BN254/Groth16) on a Raspberry Pi 4B gateway. Values are the medians of five runs. The harness that produced them ships as zkp_circuit/bench_pi_test.go (TestBenchPi); rerunning it as 'PI_BENCH=1 BENCH_PI_OUT=<path> ./benchv2_pi_inst -test.run TestBenchPi -test.v' regenerates this file, including per-run minima, maxima, and IQR bounds, which this record does not carry because the paper does not quote them.",
+  "provenance": {
+    "device": "Raspberry Pi 4B (quad-core Cortex-A72, 4 GB, 1.5 GHz)",
+    "run_date": "2026-09-18",
+    "harness": "zkp_circuit/bench_pi_test.go (TestBenchPi), cross-compiled GOOS=linux GOARCH=arm64",
+    "runs": 5,
+    "circuit": "per-microgrid CircuitMGv2, T=24, statement carrying the directed trade row (588 public-input field elements)",
+    "curve": "BN254/Groth16",
+    "note": "Rerun after the 2026-09-18 statement revision (net import -> directed trade row). The prove/verify/peak-RSS medians below are from the author's Pi run reported into this record; the device_state block is carried over from the 2026-09-15 run and was not re-captured for the rerun. Drop in the harness-written JSON (pi_bench.json) to replace the whole record with per-run bounds and a fresh device_state."
+  },
+  "device_state": {
+    "arm_freq_kHz": 1500000,
+    "soc_temp_milliC": 74000,
+    "throttled": "0x0",
+    "throttled_interpretation": "carried over from the 2026-09-15 run (no throttling then; the timings are not thermally floor-limited). Not re-captured for the 2026-09-18 rerun.",
+    "status": "carried_over"
+  },
+  "results": {
+    "prove_ms_median": 860.0,
+    "verify_ms_median": 39.0,
+    "peak_rss_MB": 225.0,
+    "prove_plus_verify_s": 0.96,
+    "prove_cpu_pct_one_core": 330.0,
+    "setup_ms": 30000.0,
+    "compile_ms": 4000.0
+  },
+  "units": "prove_ms_median and verify_ms_median are milliseconds; peak_rss_MB is the peak resident set (VmHWM) over the per-microgrid configuration; prove_plus_verify_s is the end-to-end attestation per dispatch; prove_cpu_pct_one_core is percent of ONE core, so 400 means all four cores saturated (carried over, not re-captured).",
+  "derived": {
+    "prove_ratio_vs_tab_v2bench_desktop": 17.1,
+    "desktop_baseline_ms": 50.42
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "3": {
+    "standalone": 2249.811055317368,
+    "coop": 2159.902101261915,
+    "saving_pct": 3.99628910360963,
+    "iters": 61,
+    "converged": true
+  },
+  "5": {
+    "standalone": 2994.0851577400754,
+    "coop": 2746.9077672671165,
+    "saving_pct": 8.255523054645764,
+    "iters": 249,
+    "converged": true
+  },
+  "10": {
+    "standalone": 4098.412032570741,
+    "coop": 2830.567158829966,
+    "saving_pct": 30.935027119406428,
+    "iters": 140,
+    "converged": true
+  },
+  "15": {
+    "standalone": 5942.416486001616,
+    "coop": 4630.130027242112,
+    "saving_pct": 22.083380756815355,
+    "iters": 74,
+    "converged": true
+  },
+  "20": {
+    "standalone": 7730.367791026504,
+    "coop": 6207.418388477514,
+    "saving_pct": 19.700866035337242,
+    "iters": 25,
+    "converged": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+ "config": {
+  "T": 24,
+  "curve": "BN254/Groth16",
+  "family": "v2",
+  "runs": 25
+ },
+ "results": [
+  {
+   "N": 1,
+   "circuit": "v2_mg",
+   "constraints": 22361,
+   "proof_bytes": 256,
+   "prove_ms_iqr": [
+    49.727,
+    51.895
+   ],
+   "prove_ms_max": 53.26,
+   "prove_ms_median": 50.988,
+   "prove_ms_min": 46.566,
+   "runs": 25,
+   "verified": true,
+   "verify_ms_iqr": [
+    0.997,
+    1.977
+   ],
+   "verify_ms_max": 5.242,
+   "verify_ms_median": 1.086,
+   "verify_ms_min": 0
+  }
+ ]
+}
