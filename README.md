@@ -4,7 +4,7 @@ Experiment code and archived results for the paper *"Provable Settlement of
 Peer-to-Peer Energy Trading in Networked Microgrids with Anchored
 Zero-Knowledge Dispatch Proofs"*.
 
-The repository contains two parts:
+The repository contains three parts:
 
 - `./` (root) — the distributed market clearing stack: a settlement-aware
   ADMM (SA-ADMM) solver for peer-to-peer energy trading among networked
@@ -14,6 +14,11 @@ The repository contains two parts:
 - `zkp_circuit/` — the fixed-point Groth16 circuit family (Go, gnark, BN254)
   that proves each microgrid's dispatch against the market equations, plus
   the measured circuit benchmarks reported in the paper.
+- `chaincode/energy-trading/` — the Fabric chaincode that realizes the
+  settlement contract: the on-chain Groth16 verifier, the per-session
+  market-configuration register, the line-capacity screen, and the
+  adversarial (negative) test suite, with 128-byte proof fixtures under
+  `testdata/`.
 
 ## Contents
 
@@ -35,6 +40,7 @@ witness_generator_v2.py     per-microgrid witness generator (integer pre-check)
 bench_zkp.py                Go benchmark launcher
 experiment_data_real/       archived JSON results cited in the paper (incl. profiles.json)
 zkp_circuit/                Go circuit sources, tests, and benchmark JSONs
+chaincode/energy-trading/   Fabric chaincode: Groth16 verifier, settlement contract, adversarial tests
 ```
 
 ## Requirements
@@ -50,6 +56,7 @@ pip install -r requirements.txt
 python validate.py                 # synthetic three-type fleet
 python exp_deployed_market_20260917.py   # real-profile deployed configuration
 cd zkp_circuit && go test ./...    # circuit tests and benchmarks
+cd ../chaincode/energy-trading && go test ./...    # verifier and negative suite
 ```
 
 ## Data
